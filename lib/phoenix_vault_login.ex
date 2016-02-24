@@ -3,7 +3,6 @@ defmodule VaultLogin do
   @authEndPoint "/v1/auth/userpass/login/"
   @testEndPoint "/v1/auth/token/lookup-self"
   @errMsg {:err, "Invalid request, missing or invalid data." }
-  @token "747710e0-2387-47cf-f592-38908aac0732"
 
   def auth(username, password) do
     System.get_env("VAULT_ADDR")
